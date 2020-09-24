@@ -30,6 +30,7 @@ public class TraineeService {
     public void deleteTraineeById(long trainee_id) {
         Trainee trainee = this.traineeRepository.findById(trainee_id);
         isTraineeExists(trainee);
+        this.traineeRepository.delete(trainee);
     }
 
     public void isTraineeExists(Trainee trainee) {

@@ -8,4 +8,5 @@ public class ErrorConstants {
     public static final String NAME_ERROR_MESSAGE = "name is mandatory";
     public static final String EMAIL_FORMAT_ERROR_MESSAGE = "email format wrong";
     public static final String GITHUB_ERROR_MESSAGE = "github is mandatory";
+    public static final String TRAINER_NOT_EXISTS = "trainer not exists";
 }

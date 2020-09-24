@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface TrainerRepository extends CrudRepository<Trainer, Long> {
     List<Trainer> findAllByGrouped(String grouped);
+    Trainer findById(long id);
 }
