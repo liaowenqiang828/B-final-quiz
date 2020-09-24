@@ -22,7 +22,7 @@ public class Trainer {
     @NotNull
     private String name;
     @JsonIgnore
-    private String grouped;
+    private String grouped = "false";
     @JsonIgnore
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "group_id")

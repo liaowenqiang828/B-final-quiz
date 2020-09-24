@@ -19,6 +19,9 @@ public class TraineeService {
     }
 
     public List<Trainee> getTraineeList(String grouped) {
+        if (Objects.isNull(grouped)) {
+            return this.traineeRepository.findAll();
+        }
         return this.traineeRepository.findAllByGrouped(grouped);
     }
 

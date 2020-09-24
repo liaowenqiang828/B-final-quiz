@@ -19,6 +19,9 @@ public class TrainerService {
 
 
     public List<Trainer> getTrainers(String grouped) {
+        if (Objects.isNull(grouped)) {
+            return this.trainerRepository.findAll();
+        }
         return this.trainerRepository.findAllByGrouped(grouped);
     }
 
