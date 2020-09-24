@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @Validated
+@CrossOrigin
 public class TraineeController {
     private TraineeService traineeService;
 

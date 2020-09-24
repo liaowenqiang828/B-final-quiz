@@ -35,4 +35,8 @@ public class Trainee {
 
     @JsonIgnore
     private String grouped;
+    @JsonIgnore
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "group_id")
+    private Group group;
 }
